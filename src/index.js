@@ -27,7 +27,6 @@ const AppRouter = () => (
 
       <Switch>
         <Redirect exact from='/' to='/login'/>
-        <Route path='/login' component={LoginPage}/>
         <Route component={NoMatch}/>
       </Switch>
 
@@ -36,7 +35,7 @@ const AppRouter = () => (
       <Route path='/outfitCreation' component={OutfitCreation}/>
       <Route path='/singleOutfit/:outfitId' component={SingleOutfitView}/>
       <Route path='/rate/:outfitId' component={RateView}/>
-      
+
     </div>
   </Router>
 )
